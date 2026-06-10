@@ -1,4 +1,5 @@
 # 🛡️ DogLog - Linux Log Watchdog & Incident Response
+<img width="702" height="262" alt="Captura de pantalla 2026-06-10 185220" src="https://github.com/user-attachments/assets/342253b0-5a17-4a20-8197-e69722f15065" />
 
 **DogLog** es un sistema automatizado de detección de intrusos (IDS) y respuesta ante incidentes en tiempo real diseñado para entornos Linux (Fedora/Kali). El script actúa como un componente *Blue Team*, monitorizando de forma continua los logs de acceso del servidor para detectar patrones de ataques web comunes (Inyecciones SQL, Path Traversal, XSS) y notificando de inmediato al administrador a través de alertas securizadas en Telegram.
 
@@ -94,7 +95,7 @@ echo "192.168.1.50 - - [10/06/2026] 'GET /admin.php?id=1 UNION SELECT' 404" >> s
 Resultado: El guardián procesará la línea y recibirás una alerta push en tu aplicación de Telegram de forma inmediata con los detalles del host atacante y el payload detectado.
 
 Para detener el script de forma limpia, pulsa Ctrl + C.
-
+![Uploading Captura de pantalla 2026-06-10 185613.png…]()
 ___
 
 ### 🛠️ Tecnologías Utilizadas
