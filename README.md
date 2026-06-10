@@ -40,7 +40,7 @@ pip install requests python-dotenv
 
 ___
 
-###3. Configuración del Entorno (.env)
+### 3. Configuración del Entorno (.env)
 
 ## IMPORTANTE: https://t.me/botfather
 Este es el enlace oficial de BotFather, cualquier otro enlace puede ser una estafa
