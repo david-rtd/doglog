@@ -29,7 +29,8 @@ El sistema sigue un modelo de monitorización pasiva y respuesta activa:
 ## 📦 Requisitos e Instalación
 
 ### 1. Clonar el repositorio
-git clone [https://github.com/TU_USUARIO/doglog.git](https://github.com/TU_USUARIO/doglog.git)
+git clone [https://github.com/TU_USUARIO/doglog.git](https://github.com/david-rtd/doglog.git)
+
 cd doglog
 
 ___
