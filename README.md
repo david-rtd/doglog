@@ -1,5 +1,14 @@
 # 🛡️ DogLog - Linux Log Watchdog & Incident Response
 
+.__
+      __|  |__   ____   ____     __       ____   ____
+     / _  |  |  /  _ \ / ___\  _/  \__  /  _ \ / ___\
+    |  |_|  |__(  <_> ) /_/  > \   __/_(  <_> ) /_/  >
+     \____ |____\____/\___  /   \__/    \____/\___  /
+          \/         /_____/                 /_____/
+      [ G U A R D I Á N   D E   R E G I S T R O S ]
+             -- by david-rtd | Blue Team Tool --
+
 **DogLog** es un sistema automatizado de detección de intrusos (IDS) y respuesta ante incidentes en tiempo real diseñado para entornos Linux (Fedora/Kali). El script actúa como un componente *Blue Team*, monitorizando de forma continua los logs de acceso del servidor para detectar patrones de ataques web comunes (Inyecciones SQL, Path Traversal, XSS) y notificando de inmediato al administrador a través de alertas securizadas en Telegram.
 
 ---

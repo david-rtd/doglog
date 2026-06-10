@@ -43,8 +43,19 @@ def send_telegram_alert(log_line):
         print(f"Error al enviar alerta a Telegram: {e}")
 
 def monitor_log():
-    """Vigila el archivo de logs en tiempo real (Estilo tail -f)"""
-    print(f"🛡️ Guardián activo. Monitorizando {LOG_FILE_PATH}...")
+    BANNER = r"""
+        .__
+      __|  |__   ____   ____     __       ____   ____
+     / _  |  |  /  _ \ / ___\  _/  \__  /  _ \ / ___\
+    |  |_|  |__(  <_> ) /_/  > \   __/_(  <_> ) /_/  >
+     \____ |____\____/\___  /   \__/    \____/\___  /
+          \/         /_____/                 /_____/
+      [ G U A R D I Á N   D E   R E G I S T R O S ]
+             -- by david-rtd | Blue Team Tool --
+    """
+    print(BANNER)
+    print("\n🛡️ Guardián activo... Vigilando el archivo de logs.")
+    print("-----------------------------------------------------")
     
     # Si el archivo no existe para la prueba, lo creamos vacío
     if not os.path.exists(LOG_FILE_PATH):
