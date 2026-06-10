@@ -31,15 +31,20 @@ El sistema sigue un modelo de monitorización pasiva y respuesta activa:
 git clone [https://github.com/TU_USUARIO/doglog.git](https://github.com/TU_USUARIO/doglog.git)
 cd doglog
 
+___
+
 ### 2. Instalar dependencias
 El script utiliza la librería requests para la comunicación con la API. Instálala ejecutando:
 
 pip install requests python-dotenv
 
+___
+
 ###3. Configuración del Entorno (.env)
 
 ## IMPORTANTE: https://t.me/botfather
 Este es el enlace oficial de BotFather, cualquier otro enlace puede ser una estafa
+___
 
 Por motivos de seguridad, nunca subas tus credenciales al repositorio. Crea un archivo .env en la raíz del proyecto:
 
@@ -50,6 +55,8 @@ Fragmento de código
 TELEGRAM_TOKEN=tu_token_de_botfather_aqui
 TELEGRAM_CHAT_ID=tu_id_numérico_aquí
 (Nota: Asegúrate de que tu .gitignore incluye el archivo .env antes de hacer el push).
+
+___
 
 ### Conseguir el id numerico
 Abre el bot que creaste en el BotFather real y asegúrate de haberle dado al botón Iniciar / Start (si ya lo hiciste antes, dale otra vez por si acaso).
@@ -74,6 +81,8 @@ Te saldra este contenido:
 
 Donde "id", copialo y agregalo en TELEGRAM_CHAT_ID
 
+___
+
 ### 💻 Uso y Demostración
 Ejecuta el script principal en tu terminal de Linux:
 
@@ -81,9 +90,12 @@ python doglog.py
 En una segunda terminal, simula un ataque inyectando una firma maliciosa en el log de pruebas:
 
 echo "192.168.1.50 - - [10/06/2026] 'GET /admin.php?id=1 UNION SELECT' 404" >> server_access.log
+
 Resultado: El guardián procesará la línea y recibirás una alerta push en tu aplicación de Telegram de forma inmediata con los detalles del host atacante y el payload detectado.
 
 Para detener el script de forma limpia, pulsa Ctrl + C.
+
+___
 
 ### 🛠️ Tecnologías Utilizadas
 Lenguaje: Python 3.x
